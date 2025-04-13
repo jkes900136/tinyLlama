@@ -1,14 +1,10 @@
 import torch
-import warnings
 import intel_npu_acceleration_library
 from intel_npu_acceleration_library.compiler import CompilerConfig
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from intel_npu_acceleration_library.nn.module import NPUModuleWrapper
 from transformers.models.llama.modeling_llama import LlamaAttention, LlamaRotaryEmbedding
 from transformers.models.gemma.modeling_gemma import GemmaAttention, GemmaRotaryEmbedding
-
-# suppress future warning
-warnings.simplefilter(action="ignore", category=FutureWarning)
 
 model_path = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
