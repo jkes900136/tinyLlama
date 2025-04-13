@@ -18,7 +18,7 @@ Finally, run the command
 ```
 To build the package you need a compiler in your system (Visual Studio suggested for Windows build). MacOS is not yet supported. At the moment only Ubuntu OS is supported for Linux build.
 
-After the installation of intel-npu-acceleration-library
+#### After the installation of intel-npu-acceleration-library
 the code does not work on the intel_npu_acceleration_library 1.4.0, until change the ‘intel_npu_acceleration_library/nn/llm.py‘’’ line 245, from
 ```
 return attn_output, None, past_key_value
