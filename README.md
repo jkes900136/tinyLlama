@@ -20,7 +20,7 @@ Finally, run the command
 ```bash
    pip install intel-npu-acceleration-library
 ```
-To build the package you need a compiler in your system (Visual Studio and CMake suggested for Windows build). MacOS is not yet supported. At the moment only Ubuntu OS is supported for Linux build.
+To build the package you need a compiler in your system (Visual Studio, Rust and CMake suggested for Windows build). MacOS is not yet supported. At the moment only Ubuntu OS is supported for Linux build.
 
 #### After the installation of intel-npu-acceleration-library
 The code does not work on the intel_npu_acceleration_library 1.4.0, until change the ‘intel_npu_acceleration_library/nn/llm.py‘’’ line 245, from
