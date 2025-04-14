@@ -1,4 +1,4 @@
-# TinyLlama on the Intel NPU
+# Run the TinyLlama model on the NPU
 The Intel NPU Acceleration Library is a Python library designed to leverage the power of the Intel Neural Processing Unit (NPU) to perform high-speed computations on Intel Core Ultra and later hardware, thereby improving the efficiency of applications.
 
 ## Setup
@@ -27,10 +27,16 @@ to
 ```
 return attn_output, None
 ```
+#### Use the model from vLLM
+```
+# Install vLLM from pip:
+pip install vllm
+```
+
 ## Usage
 
-#### tinyLlama.py
+#### tinyLlamaInteraction.py
 It allows you to run a Q&A session.
 
-#### tLlamaSample.py
+#### tinyLlamaDemo.py
 It allows you to automatically generate question-answer examples.
