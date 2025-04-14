@@ -39,7 +39,7 @@ pip install vllm
 
 ## Usage
 
-#### tinyLlamaInteraction.py
+#### tinyLlamaChat.py
 It allows you to run a Q&A session.
 
 #### tinyLlamaDemo.py
