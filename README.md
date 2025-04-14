@@ -1,5 +1,9 @@
 # Run the TinyLlama model on the NPU
-The Intel NPU Acceleration Library is a Python library designed to leverage the power of the Intel Neural Processing Unit (NPU) to perform high-speed computations on Intel Core Ultra and later hardware, thereby improving the efficiency of applications.
+#### Intel NPU
+The Intel NPU is an AI accelerator integrated into the Intel Core Ultra processors, which features a unique architecture that includes computing acceleration and data transmission capabilities.
+#### Llama
+Llama (Large Language Model Meta AI, formerly known as LLaMA) is a series of Large Language Models (LLMs) released by Meta AI starting in February 2023.
+A Large Language Model (LLM) is a machine learning model designed for natural language processing tasks such as language generation. LLMs are language models with many parameters, trained through self-supervised learning on a large set of text.
 
 ## Setup
 
@@ -16,7 +20,7 @@ Finally, run the command
 ```bash
    pip install intel-npu-acceleration-library
 ```
-To build the package you need a compiler in your system (Visual Studio suggested for Windows build). MacOS is not yet supported. At the moment only Ubuntu OS is supported for Linux build.
+To build the package you need a compiler in your system (Visual Studio and CMake suggested for Windows build). MacOS is not yet supported. At the moment only Ubuntu OS is supported for Linux build.
 
 #### After the installation of intel-npu-acceleration-library
 The code does not work on the intel_npu_acceleration_library 1.4.0, until change the ‘intel_npu_acceleration_library/nn/llm.py‘’’ line 245, from
